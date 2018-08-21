@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bottom_bar_normal_bg">#FFE7BA</color>
+    <color name="common_bottom_bar_selected_bg">#CD2626</color>
+    <color name="main_botton_text_color">#EEEE00</color>
+    <color name="common_bottom_bar_normal_bg">#FFE7BA</color>
+    <color name="common_bg">#FFFFFF</color>
+    <color name="top_title">#fcfcfc</color>
+    <color name="top_bar_bg">#FF0000</color>
+    <color name="vice_top_bar">#CDC5BF</color>
+    <color name="vice_top_title">#000000</color>
+    <color name="home_info_bg">#FFFFFF</color>
+    <color name="home_info">#0A0A0A</color>
+</resources>

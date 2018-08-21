@@ -1,0 +1,187 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   
+
+    <LinearLayout 
+        android:id="@+id/main_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bottom_bar_normal_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        
+        <RelativeLayout 
+            android:id="@+id/btn_container_message"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            
+            <Button 
+                android:id="@+id/btn_message"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/main_bottom_item_bg"
+                android:drawableTop="@drawable/tab_mes_bg"
+                android:onClick="onClick"
+                android:paddingBottom="2dip"
+                android:paddingTop="7dip"
+                android:scaleType="matrix"
+                android:text="消息"
+                android:textColor="@color/main_botton_text_color"
+                android:textSize="12sp" />
+             <TextView
+                android:id="@+id/unread_address_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+               
+                android:gravity="center"
+                android:text="7"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:visibility="invisible" />
+         
+        </RelativeLayout>
+        
+         <RelativeLayout 
+            android:id="@+id/btn_container_trajectory"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            
+            <Button 
+                android:id="@+id/btn_trajectory"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/main_bottom_item_bg"
+                android:drawableTop="@drawable/trajectory_normal"           
+                android:onClick="onClick"
+                android:paddingBottom="2dip"
+                android:paddingTop="7dip"
+                android:scaleType="matrix"
+                android:text="状态"
+                android:textColor="@color/main_botton_text_color"
+                android:textSize="12sp" />
+            
+             <TextView
+                android:id="@+id/unread_trajectory_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+               
+                android:gravity="center"
+                android:text="7"
+                android:textColor="@android:color/white" 
+                android:textSize="12sp"
+                android:visibility="invisible" />
+         
+        </RelativeLayout>
+        
+          <RelativeLayout 
+            android:id="@+id/btn_container_companies"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            
+            <Button 
+                android:id="@+id/btn_companies"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/main_bottom_item_bg"
+                android:drawableTop="@drawable/company_normal"
+                android:onClick="onClick"
+                android:paddingBottom="2dip"
+                android:paddingTop="7dip"
+                android:scaleType="matrix"
+                android:text="伙伴"
+                android:textColor="@color/main_botton_text_color"
+                android:textSize="12sp"
+                 />
+             
+         
+        </RelativeLayout>
+        
+          <RelativeLayout 
+            android:id="@+id/btn_container_virtual"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            
+            <Button 
+                android:id="@+id/btn_virtual"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/main_bottom_item_bg"
+                android:drawableTop="@drawable/virtual_normal"
+                android:onClick="onClick"
+                android:paddingBottom="2dip"
+                android:paddingTop="7dip"
+                android:scaleType="matrix"
+                android:text="虚拟体验"
+                android:textColor="@color/main_botton_text_color"
+                android:textSize="12sp" />
+             <TextView
+                android:id="@+id/unread_virtual_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+               
+                android:gravity="center"
+                android:text="7"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:visibility="invisible" />
+         
+        </RelativeLayout>
+        
+           
+        
+            <RelativeLayout 
+            android:id="@+id/btn_container_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            
+            <Button 
+                android:id="@+id/btn_home"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/main_bottom_item_bg"
+                android:drawableTop="@drawable/home_normal"
+                android:onClick="onClick"
+                android:paddingBottom="2dip"
+                android:paddingTop="7dip"
+                android:scaleType="matrix"
+                android:text="home"
+                android:textColor="@color/main_botton_text_color"
+                android:textSize="12sp" />
+             <TextView
+                android:id="@+id/unread_home_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+               
+                android:gravity="center"
+                android:text="7"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:visibility="invisible" />
+         
+        </RelativeLayout>         
+        
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/main_bottom" />
+
+</RelativeLayout>

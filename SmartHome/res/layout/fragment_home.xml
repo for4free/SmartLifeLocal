@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/common_bg">
+    
+<!--     标题 -->
+    <RelativeLayout
+        android:id="@+id/home_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/top_bar_bg"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/home_titile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Home"
+            android:textColor="@color/top_title"
+            android:textSize="@dimen/top_title"/>
+    </RelativeLayout>
+    
+<!--     以下都是列表 -->
+    <LinearLayout
+        android:id="@+id/zhanghuming_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/common_bg"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/zhanghuming_titile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="  账户名：新月长雪"
+            android:textColor="@color/vice_top_title"
+            android:textSize="@dimen/top_title"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/phonenum_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/common_bg"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/phonenum_titile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="  手机号：15067189650"
+            android:textColor="@color/vice_top_title"
+            android:textSize="@dimen/top_title"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/passwordmodify_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/common_bg"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/passwordmodify_titile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="  修改密码"
+            android:textColor="@color/vice_top_title"
+            android:textSize="@dimen/top_title"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/sharecompanies_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/common_bg"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/sharecompanies_titile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="  分享伙伴"
+            android:textColor="@color/vice_top_title"
+            android:textSize="@dimen/top_title"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/logout_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/common_bg"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/logout_titile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="  退出登录"
+            android:textColor="@color/vice_top_title"
+            android:textSize="@dimen/top_title"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/sharecompany_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/common_bg"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/sharecompany_titile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="  关于伙伴"
+            android:textColor="@color/vice_top_title"
+            android:textSize="@dimen/top_title"/>
+    </LinearLayout>
+</LinearLayout>

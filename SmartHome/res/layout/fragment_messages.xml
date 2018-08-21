@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/common_bg">
+
+<!--     消息标题 -->
+    <RelativeLayout
+        android:id="@+id/messages_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/top_bar_bg"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/messages_titile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="消 息"
+            android:textColor="@color/top_title"
+            android:textSize="@dimen/top_title"/>
+     </RelativeLayout>
+     
+<!--     用户对话框 -->
+     <LinearLayout
+        android:id="@+id/messages_image_list"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_image_list_bar"   
+        android:background="@color/common_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+         
+        
+<!-- 对话框，包含文字与plus与minus -->
+       <RelativeLayout  
+            android:id="@+id/btn_container_duihuakuang"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+            
+<!--    父RelativeLayout的上下分割        对话框文字内容  -->           
+               <Button 
+                   android:id="@+id/btn_duihuakuang"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent" 
+                   android:drawableTop="@drawable/duihuakuang_normal"
+                   android:paddingBottom="2dip"
+                   android:paddingTop="7dip"
+                   android:scaleType="matrix"
+                   android:textColor="@color/vice_top_title"
+                   android:textSize="12sp"
+                   android:background="@color/common_bg" /> 
+                   
+                   <TextView
+                   android:id="@+id/tx_duihuakuang"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginRight="10dp"             
+                   android:gravity="center"
+                   android:text="Hi Payne,锁已开。但不是 
+                                                                                                                   你本人操作,有问题吗？"
+                   android:textColor="@android:color/black"
+                   android:textSize="12sp"
+                   android:paddingBottom="25dip"
+                   android:paddingTop="2dip"
+                   android:visibility="visible" />          
+                   
+               
+      </RelativeLayout>
+        
+<!--        显示用户头像 -->
+       <RelativeLayout 
+            android:id="@+id/btn_container_bike"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"            
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btn_bike"
+                style="@color/common_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableTop="@drawable/bike_normal"
+                android:paddingBottom="2dip"
+                android:paddingTop="7dip"
+                android:scaleType="matrix"
+                android:singleLine="true" 
+                android:background="@color/common_bg"/>   
+                             
+        </RelativeLayout>     
+</LinearLayout>
+</LinearLayout>

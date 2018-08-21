@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/common_bg">
+    <LinearLayout 
+        android:id="@+id/companies_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/top_bar_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+    <RelativeLayout
+        android:id="@+id/companies_top_bar_front"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/top_bar_bg"
+        android:gravity="center_vertical"
+        android:layout_weight="5">
+        
+         <TextView
+            android:id="@+id/companies_titile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="伙 伴"
+            android:textColor="@color/top_title"
+            android:textSize="@dimen/top_title"/>
+    </RelativeLayout>
+    <RelativeLayout 
+        android:id="@+id/companies_top_bar_add"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <Button 
+            android:id="@+id/companies_add"
+            style="@color/common_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/companies_add"
+            android:paddingBottom="0dip"
+            android:paddingTop="0dip"
+            android:scaleType="matrix"
+            android:singleLine="true"/>
+    </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/companies_vice_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_vice_top_bar"   
+        android:background="@color/vice_top_bar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+         <RelativeLayout 
+            android:id="@+id/btn_container_furniture"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            
+            <Button 
+                android:id="@+id/btn_furniture"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                
+                android:paddingBottom="2dip"
+                android:paddingTop="7dip"
+                android:scaleType="matrix"
+                android:text="家居"
+                android:textColor="@color/vice_top_title"
+                android:textSize="12sp"/>
+             <TextView
+                android:id="@+id/unread_address_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+               
+                android:gravity="center"
+                android:text="7"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:visibility="invisible" />
+         
+        </RelativeLayout>
+        
+         <RelativeLayout 
+            android:id="@+id/btn_container_goout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            
+            <Button 
+                android:id="@+id/btn_goout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                
+                android:paddingBottom="2dip"
+                android:paddingTop="7dip"
+                android:scaleType="matrix"
+                android:text="出行"
+                android:textColor="@color/vice_top_title"
+                android:textSize="12sp" />
+             <TextView
+                android:id="@+id/tx_goout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+               
+                android:gravity="center"
+                android:text="7"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:visibility="invisible" />
+         
+        </RelativeLayout>
+        
+         <RelativeLayout 
+            android:id="@+id/btn_container_equipment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            
+            <Button 
+                android:id="@+id/btn_equipment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                
+                android:paddingBottom="2dip"
+                android:paddingTop="7dip"
+                android:scaleType="matrix"
+                android:text="设备"
+                android:textColor="@color/vice_top_title"
+                android:textSize="12sp" />
+             <TextView
+                android:id="@+id/tx_equipment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+               
+                android:gravity="center"
+                android:text="7"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:visibility="invisible" />
+         
+        </RelativeLayout>
+        
+         <RelativeLayout 
+            android:id="@+id/btn_container_pay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            
+            <Button 
+                android:id="@+id/btn_pay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                
+                android:paddingBottom="2dip"
+                android:paddingTop="7dip"
+                android:scaleType="matrix"
+                android:text="支付"
+                android:textColor="@color/vice_top_title"
+                android:textSize="12sp" />
+             <TextView
+                android:id="@+id/tx_pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+               
+                android:gravity="center"
+                android:text="7"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:visibility="invisible" />
+         
+        </RelativeLayout>       
+     </LinearLayout>
+     
+    <LinearLayout
+        android:id="@+id/companies_image_list"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_image_list_bar"   
+        android:background="@color/common_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+         <RelativeLayout 
+            android:id="@+id/btn_container_bike"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            
+            android:layout_weight="1">
+            
+            <Button
+                android:id="@+id/btn_bike"
+                style="@color/common_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableTop="@drawable/bike_normal"
+                android:paddingBottom="2dip"
+                android:paddingTop="7dip"
+                android:scaleType="matrix"
+                android:singleLine="true" 
+                android:background="@color/common_bg"/>
+      
+        </RelativeLayout>
+        <RelativeLayout 
+            android:id="@+id/btn_container_car"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            
+            android:layout_weight="1">
+            
+            <Button 
+                android:id="@+id/btn_car"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"                
+                android:paddingBottom="2dip"
+                android:paddingTop="7dip"
+                 android:drawableTop="@drawable/car_normal"
+             
+                android:scaleType="matrix"
+                android:background="@color/common_bg"/>      
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

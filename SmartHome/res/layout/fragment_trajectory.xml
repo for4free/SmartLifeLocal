@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+     <RelativeLayout
+        android:id="@+id/zhuangtai_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/top_bar_bg"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/trajectories_titile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="状 态"
+            android:textColor="@color/top_title"
+            android:textSize="@dimen/top_title"/>
+    </RelativeLayout>
+    
+<!--     状态图1和2 -->
+    <LinearLayout   
+        android:id="@+id/zhuagntai_second_row" 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_image_list_bar"   
+        android:background="@color/vice_top_bar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">        
+<!--         状态1 -->
+         <RelativeLayout    
+            android:id="@+id/btn_container_zhuangtai1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"            
+            android:layout_weight="1">          
+            <Button                
+                android:id="@+id/btn_zhuangtai1"
+                style="@color/common_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableTop="@drawable/zhuangtai1"
+                android:paddingBottom="2dip"
+                android:paddingTop="7dip"
+                android:scaleType="matrix"
+                android:singleLine="true" 
+                android:background="@color/common_bg"/>   
+        </RelativeLayout>
+        
+<!--          状态2 -->
+         <RelativeLayout    
+            android:id="@+id/btn_container_zhuangtai2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"            
+            android:layout_weight="2">          
+            <Button                
+                android:id="@+id/btn_zhuangtai2"
+                style="@color/common_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableTop="@drawable/zhuangtai2_2"
+                android:paddingBottom="2dip"
+                android:paddingTop="7dip"
+                android:scaleType="matrix"
+                android:singleLine="true" 
+                android:background="@color/common_bg"/> 
+                
+                <TextView
+                   android:id="@+id/zhuangtai_2_text"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginRight="10dp"             
+                   android:gravity="center"
+                   android:text="Mike"
+                   android:paddingBottom="17dip"
+                   android:paddingTop="50dip"
+                   android:textColor="@android:color/black"
+                   android:textSize="12sp"
+                   android:visibility="visible"
+                   android:drawableTop="@drawable/zhuangtai_2_picture2"/>
+                                    
+        </RelativeLayout>      
+     </LinearLayout>
+        
+<!--     状态图3和4 -->
+    <LinearLayout   
+        android:id="@+id/zhuangtai_third_row" 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_image_list_bar"   
+        android:background="@color/vice_top_bar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">      
+<!--         状态3 -->
+         <RelativeLayout    
+            android:id="@+id/btn_container_zhuangtai3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"            
+            android:layout_weight="2">          
+            <Button                
+                android:id="@+id/btn_zhuangtai3"
+                style="@color/common_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableTop="@drawable/zhuangtai3_2"
+                android:paddingBottom="2dip"
+                android:paddingTop="7dip"
+                android:scaleType="matrix"
+                android:singleLine="true"
+                android:background="@color/common_bg" /> 
+                
+            <TextView
+                   android:id="@+id/zhuangtai_3_text"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginRight="10dp"             
+                   android:gravity="center"
+                   android:text="Tesla"
+                   android:paddingBottom="17dip"
+                   android:paddingTop="16dip"
+                   android:textColor="@android:color/black"
+                   android:textSize="12sp"
+                   android:visibility="visible"
+                   android:drawableTop="@drawable/zhuangtai_3_picture" />
+        </RelativeLayout>
+        
+<!--          状态4 -->
+         <RelativeLayout    
+            android:id="@+id/btn_container_zhuangtai4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"            
+            android:layout_weight="1">          
+            <Button                
+                android:id="@+id/btn_zhuangtai4"
+                style="@color/common_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableTop="@drawable/zhuangtai4"
+                android:paddingBottom="2dip"
+                android:paddingTop="7dip"
+                android:scaleType="matrix"
+                android:singleLine="true" 
+                android:background="@color/common_bg"/>   
+        </RelativeLayout>
+</LinearLayout>
+</LinearLayout>

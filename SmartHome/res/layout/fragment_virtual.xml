@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/common_bg"> 
+<!--     设置背景色 -->
+    
+<!--      标题伙伴 -->
+    <RelativeLayout      
+        android:id="@+id/virtual_top_bar"   
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/top_bar_bg"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/virtual_titile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="体 验"
+            android:textColor="@color/top_title"
+            android:textSize="@dimen/top_title"/>
+    </RelativeLayout>
+    
+<!--     设置副标题 -->
+    <LinearLayout 
+        android:id="@+id/virtual_vice_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_vice_top_bar"
+        android:background="@color/vice_top_bar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">       
+        <RelativeLayout 
+            android:id="@+id/btn_container_recommend"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">           
+            <Button 
+                android:id="@+id/btn_virtual_recommend"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"              
+                android:paddingBottom="2dip"
+                android:paddingTop="7dip"
+                android:scaleType="matrix"
+                android:text="推荐"
+                android:textColor="@color/vice_top_title"
+                android:textSize="12sp" />
+        </RelativeLayout>
+        
+        <RelativeLayout 
+            android:id="@+id/btn_container_sort"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <Button 
+                android:id="@+id/btn_virtual_sort"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"              
+                android:paddingBottom="2dip"
+                android:paddingTop="7dip"
+                android:scaleType="matrix"
+                android:text="类别"
+                android:textColor="@color/vice_top_title"
+                android:textSize="12sp" />
+        </RelativeLayout>
+        </LinearLayout>
+ 
+<!--         设置上面图片 -->
+        <LinearLayout 
+        android:id="@+id/virtual_picture_up"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/picture_normal"
+        android:background="@color/vice_top_bar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">            
+            <Button           
+                android:id="@+id/btn_picture1"
+                style="@color/common_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableTop="@drawable/recommend_normal_1_1"
+                android:paddingBottom="2dip"
+                android:paddingTop="7dip"
+                android:scaleType="matrix"
+                android:singleLine="true" 
+                android:background="@color/common_bg"/>
+           </LinearLayout>
+            
+<!--             设置下面图片 -->
+        <LinearLayout 
+        android:id="@+id/virtual_picture_down"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/picture_normal"
+        android:background="@color/vice_top_bar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">                   
+            <Button           
+                android:id="@+id/btn_picture2"
+                style="@color/common_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableTop="@drawable/recommend_normal_1_2"
+                android:paddingBottom="2dip"
+                android:paddingTop="7dip"
+                android:scaleType="matrix"
+                android:singleLine="true" 
+                android:background="@color/common_bg"/>
+           </LinearLayout>
+        
+       
+    
+    </LinearLayout>
