@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackGroud"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:background="@color/colorBackGroudSecond"
+    	>
+    	<RelativeLayout 
+    	    android:id="@+id/activity_add_equipment_rl_return"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true"
+    	    >
+    	    <ImageView
+	        android:id="@+id/activity_add_equipment_iv_return"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="20dp"
+	        android:src="@drawable/ic_left_black" />
+    	</RelativeLayout>
+
+	    <TextView
+	        android:id="@+id/dialog_setting_addequipment_tv_title"
+	        android:layout_width="match_parent"
+	        android:layout_height="50dp"
+	        android:layout_centerInParent="true"
+	        android:gravity="center"
+	        android:textSize="16dp"
+	        android:text="添加设备" />
+
+    </RelativeLayout>
+    
+	<TextView 
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:text="设备信息" />
+	
+    <ImageView 
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+	    android:background="@color/colorLine"
+    />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_marginLeft="10dp"
+    	android:gravity="center_vertical"
+    	>
+	    <TextView 
+	        android:id="@+id/dialog_setting_addequipment_tv_id"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="设备ID："/>
+	    <EditText 
+	        android:id="@+id/activity_add_equipment_et_id"
+	        android:hint="请输入设备ID"
+	        android:inputType="text"
+	        android:textColor="@color/colorGray"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="5dp"
+	        android:textSize="14dp"
+	        android:singleLine="true"
+	        android:background="@null"
+	        android:layout_toRightOf="@id/dialog_setting_addequipment_tv_id"/>
+	    
+	    <ImageView 
+	        android:layout_below="@id/dialog_setting_addequipment_tv_id"
+	        android:id="@+id/dialog_setting_addequipment_iv_msg"
+		    android:layout_width="match_parent"
+		    android:layout_height="1dp"
+	        android:layout_marginRight="10dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginBottom="10dp"
+		    android:background="@color/colorLine"/>
+	    
+	    <TextView 
+	        android:id="@+id/dialog_setting_addequipment_tv_name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/dialog_setting_addequipment_iv_msg"
+	        android:text="显示名称："/>
+	    <EditText 
+	        android:id="@+id/activity_add_equipment_et_name"
+	        android:hint="请输入显示名称"
+	        android:textColor="@color/colorGray"
+	        android:textSize="14dp"
+	        android:inputType="textPersonName"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="5dp"
+	        android:singleLine="true"
+	        android:background="@null"
+	        android:layout_below="@id/dialog_setting_addequipment_iv_msg"
+	        android:layout_toRightOf="@id/dialog_setting_addequipment_tv_name"/>
+    </RelativeLayout>
+    
+    <ImageView 
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+	    android:background="@color/colorLine"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="推荐名称前缀：" />
+    
+    <ImageView 
+	    android:layout_width="fill_parent"
+	    android:layout_height="1dp"
+	    android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+	    android:background="@color/colorLine"
+    />
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_marginLeft="10dp"
+    	android:gravity="center_vertical"
+    	>
+
+	    <TextView
+	        android:id="@+id/activity_add_equipment_tv_livingRoom"
+	        android:layout_width="60dp"
+	        android:layout_height="26dp"
+	        android:layout_marginLeft="20dp"
+	        android:background="@drawable/selector_fragment_setting_addequipment"
+	        android:clickable="true"
+	        android:gravity="center"
+	        android:textColor="@color/black"
+	        android:text="客厅" />
+	    
+	    <TextView
+	        android:id="@+id/activity_add_equipment_tv_kitchen"
+	        android:layout_width="60dp"
+	        android:layout_height="26dp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_toRightOf="@id/activity_add_equipment_tv_livingRoom"
+	        android:background="@drawable/selector_fragment_setting_addequipment"
+	        android:clickable="true"
+	        android:gravity="center"
+	        android:textColor="@color/black"
+	        android:text="厨房" />
+	    
+	    <TextView
+	        android:id="@+id/activity_add_equipment_tv_master"
+	        android:layout_width="60dp"
+	        android:layout_height="26dp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_toRightOf="@id/activity_add_equipment_tv_kitchen"
+	        android:background="@drawable/selector_fragment_setting_addequipment"
+	        android:clickable="true"
+	        android:gravity="center"
+	        android:textColor="@color/black"
+	        android:text="主卧" />
+	    
+	    <TextView
+	        android:id="@+id/activity_add_equipment_tv_study"
+	        android:layout_width="60dp"
+	        android:layout_height="26dp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_toRightOf="@id/activity_add_equipment_tv_master"
+	        android:background="@drawable/selector_fragment_setting_addequipment"
+	        android:clickable="true"
+	        android:textColor="@color/black"
+	        android:gravity="center"
+	        android:text="书房" />
+	    
+	    <TextView
+	        android:id="@+id/activity_add_equipment_tv_toilet"
+	        android:layout_width="60dp"
+	        android:layout_height="26dp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_toRightOf="@id/activity_add_equipment_tv_study"
+	        android:background="@drawable/selector_fragment_setting_addequipment"
+	        android:clickable="true"
+	        android:textColor="@color/black"
+	        android:gravity="center"
+	        android:text="洗手间" />
+	    
+	    <TextView
+	        android:id="@+id/activity_add_equipment_tv_balcony"
+	        android:layout_width="60dp"
+	        android:layout_height="26dp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_toRightOf="@id/activity_add_equipment_tv_toilet"
+	        android:background="@drawable/selector_fragment_setting_addequipment"
+	        android:clickable="true"
+	        android:gravity="center"
+	        android:textColor="@color/black"
+	        android:text="阳台" />
+	
+	</RelativeLayout>
+	
+    <ImageView 
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+	    android:background="@color/colorLine"
+    />
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/activity_add_equipment_bt_add"
+            android:layout_width="100dp"
+	        android:layout_height="30dp"
+	        android:gravity="center"
+	        android:textColor="@color/black"
+            android:background="@drawable/selector_fragment_setting_addequipment"
+            android:text="添加" />
+    </RelativeLayout>
+    
+    
+
+</LinearLayout>

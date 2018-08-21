@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:tag="homeFragment"
+    android:orientation="horizontal" >
+
+    
+    <FrameLayout
+        android:id="@+id/fragment_home_static"  
+        android:layout_width="0dip"  
+        android:layout_height="match_parent"  
+        android:layout_weight="3" />  
+  
+    <ImageView 
+	    android:layout_width="3dp"
+	    android:layout_height="fill_parent"
+	    android:background="@color/miFirstLine"
+    />
+    
+    <FrameLayout
+        android:id="@+id/fragment_home_dynamic"  
+        android:layout_width="0dip"  
+        android:layout_height="match_parent"  
+        android:layout_weight="7" />  
+
+    
+    
+
+</LinearLayout>

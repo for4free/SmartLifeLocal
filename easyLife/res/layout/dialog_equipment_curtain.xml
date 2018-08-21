@@ -1,0 +1,202 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_fml_create"
+    android:layout_width="match_parent"
+    android:background="@color/dialogBg"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout 
+        android:id="@+id/dialog_equipment_curtain_rl_firstView"
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@color/dialogBg"
+	    android:visibility="visible"
+	    android:orientation="vertical">
+	    <RelativeLayout 
+	        android:id="@+id/dialog_equipment_curtain_rl_title"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@color/dialogTitle"
+	        >
+	
+	        <TextView
+	            android:id="@+id/dialog_equipment_curtain_tv_title"
+	            android:layout_width="wrap_content"
+	            android:layout_height="40dp"
+	            android:layout_centerInParent="true"
+	            android:gravity="center"
+	            android:text="窗帘控制" />
+		    
+		    <ImageView 
+		        android:id="@+id/dialog_equipment_curtain_iv_delete"
+			    android:layout_width="wrap_content"
+			    android:layout_alignParentRight="true"
+			    android:layout_gravity="center"
+			    android:layout_height="40dp"
+			    android:layout_marginRight="20dp"
+			    android:src="@drawable/ic_delete"
+		    />
+	    </RelativeLayout>
+	    
+	    <ImageView 
+	        android:id="@+id/dialog_equipment_curtain_iv_line"
+		    android:layout_width="fill_parent"
+		    android:layout_below="@+id/dialog_equipment_curtain_rl_title"
+		    android:layout_height="1dp"
+		    android:background="@color/colorLine"
+	    />
+	    
+	    <TextView
+	        android:id="@+id/dialog_equipment_curtain_tv_message"
+	        android:layout_width="fill_parent"
+	        android:layout_below="@+id/dialog_equipment_curtain_iv_line"
+	        android:layout_height="50dp"
+	        android:gravity="center"
+	        android:text="窗帘当前状态：" />
+	
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/dialog_equipment_curtain_tv_message"
+	        android:layout_centerHorizontal="true"
+	        android:orientation="horizontal" >
+			
+	        <RelativeLayout
+	            android:id="@+id/dialog_equipment_curtain_open"
+	            android:layout_width="match_parent"
+	            android:layout_height="60dp"
+	            android:gravity="center"
+	            android:layout_weight="1" >
+	
+	            <Button
+	                android:id="@+id/dialog_equipment_curtain_bt_open"
+	                android:background="@drawable/selector_bt_dialog_bg"
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent"
+	                android:gravity="center"
+	                android:layout_centerInParent="true"
+	                android:layout_margin="15dp"
+	                android:text="打开" />
+	        </RelativeLayout>
+	        <RelativeLayout
+	            android:layout_width="match_parent"
+	            android:id="@+id/dialog_equipment_curtain_stop"
+	            android:layout_height="60dp"
+	            android:gravity="center"
+	            android:layout_weight="1" >
+	
+	            <Button
+	                android:id="@+id/dialog_equipment_curtain_bt_stop"
+	                android:background="@drawable/selector_bt_dialog_bg"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_centerInParent="true"
+	                android:gravity="center"
+	                android:layout_margin="15dp"
+	                android:text="停止" />
+	        </RelativeLayout>
+	        <RelativeLayout
+	            android:layout_width="match_parent"
+	            android:id="@+id/dialog_equipment_curtain_close"
+	            android:layout_height="60dp"
+	            android:gravity="center"
+	            android:layout_weight="1" >
+	
+	            <Button
+	                android:id="@+id/dialog_equipment_curtain_bt_close"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:background="@drawable/selector_bt_dialog_bg"
+	                android:layout_centerInParent="true"
+	                android:gravity="center"
+	                android:layout_margin="15dp"
+	                android:text="关闭" />
+	        </RelativeLayout>
+	        
+	            
+	    </LinearLayout>
+	</RelativeLayout>
+	
+    <RelativeLayout 
+	    android:id="@+id/dialog_equipment_curtain_rl_secondView"
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@color/dialogBg"
+	    android:visibility="gone"
+	    android:orientation="vertical">
+	    
+	    <RelativeLayout 
+	        android:id="@+id/dialog_equipment_curtain_rl_title_delete"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@color/dialogTitle"
+	        >
+	
+	        <TextView
+	            android:id="@+id/dialog_equipment_curtain_tv_title_delete"
+	            android:layout_width="wrap_content"
+	            android:layout_height="40dp"
+	            android:layout_centerInParent="true"
+	            android:gravity="center"
+	            android:text="删除设备" />
+		    
+	    </RelativeLayout>
+	
+	    <ImageView 
+	        android:id="@+id/dialog_equipment_curtain_iv_line_delete"
+		    android:layout_width="fill_parent"
+		    android:layout_below="@+id/dialog_equipment_curtain_rl_title_delete"
+		    android:layout_height="1dp"
+		    android:background="@color/colorLine"
+	    />
+	    
+	    <TextView
+	        android:id="@+id/dialog_equipment_curtain_tv_message_delete"
+	        android:layout_width="fill_parent"
+	        android:layout_below="@+id/dialog_equipment_curtain_iv_line_delete"
+	        android:layout_height="50dp"
+	        android:gravity="center"
+	        android:text="确认删除设备：？" />
+	    
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/dialog_equipment_curtain_tv_message_delete"
+	        android:layout_centerHorizontal="true"
+	        android:orientation="horizontal" >
+			
+	        <RelativeLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="60dp"
+	            android:gravity="center"
+	            android:layout_weight="1" >
+	
+	            <Button
+	                android:id="@+id/dialog_equipment_curtain_bt_confirm"
+	                android:background="@drawable/selector_bt_dialog_bg"
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent"
+	                android:gravity="center"
+	                android:layout_centerInParent="true"
+	                android:layout_margin="15dp"
+	                android:text="删除" />
+	        </RelativeLayout>
+	        <RelativeLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="60dp"
+	            android:gravity="center"
+	            android:layout_weight="1" >
+	
+	            <Button
+	                android:id="@+id/dialog_equipment_curtain_bt_cancel"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:background="@drawable/selector_bt_dialog_bg"
+	                android:layout_centerInParent="true"
+	                android:gravity="center"
+	                android:layout_margin="15dp"
+	                android:text="取消" />
+	        </RelativeLayout>
+	        
+    	</LinearLayout>
+	</RelativeLayout>
+</RelativeLayout>

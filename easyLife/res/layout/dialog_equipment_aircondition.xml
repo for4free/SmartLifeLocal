@@ -1,0 +1,244 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_fml_create"
+    android:layout_width="match_parent"
+    android:background="@color/dialogBg"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout 
+        android:id="@+id/dialog_equipment_airCondition_rl_firstView"
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@color/dialogBg"
+	    android:visibility="visible"
+	    android:orientation="vertical">
+	    <RelativeLayout 
+	        android:id="@+id/dialog_equipment_airCondition_rl_title"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@color/dialogTitle"
+	        >
+	        <TextView
+		        android:id="@+id/dialog_equipment_airCondition_tv_title"
+		        android:layout_width="wrap_content"
+		        android:layout_height="40dp"
+		        android:layout_centerInParent="true"
+		        android:gravity="center"
+		        android:text="空调控制" />
+		    
+		    <ImageView 
+		        android:id="@+id/dialog_equipment_airCondition_iv_delete"
+			    android:layout_width="wrap_content"
+			    android:layout_alignParentRight="true"
+			    android:layout_gravity="center"
+			    android:layout_height="40dp"
+			    android:layout_marginRight="20dp"
+			    android:src="@drawable/ic_delete"
+		    />
+	    </RelativeLayout>
+	    
+	    <ImageView 
+	        android:id="@+id/dialog_equipment_airCondition_iv_line"
+		    android:layout_width="fill_parent"
+		    android:layout_below="@+id/dialog_equipment_airCondition_rl_title"
+		    android:layout_height="1dp"
+		    android:background="@color/colorLine"
+	    />
+	    
+	    <LinearLayout
+	        android:layout_width="200dp"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/dialog_equipment_airCondition_btLayout"
+	        android:layout_below="@+id/dialog_equipment_airCondition_iv_line"
+	        android:layout_centerHorizontal="true"
+	        android:orientation="horizontal" >
+			
+	        <RelativeLayout
+	            android:id="@+id/dialog_equipment_airCondition_power"
+	            android:layout_width="match_parent"
+	            android:layout_height="60dp"
+	            android:gravity="center"
+	            android:layout_weight="1" >
+	
+	            <Button
+	                android:id="@+id/dialog_equipment_airCondition_bt_on"
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent"
+	                android:layout_centerInParent="true"
+	                android:layout_margin="15dp"
+	                android:background="@drawable/selector_bt_dialog_bg"
+	                android:gravity="center"
+	                android:text="开启"
+	                android:textSize="14dp" />
+	
+	        </RelativeLayout>
+	        <RelativeLayout
+	            android:layout_width="match_parent"
+	            android:id="@+id/dialog_equipment_airCondition_reset"
+	            android:layout_height="60dp"
+	            android:gravity="center"
+	            android:layout_weight="1" >
+	
+	            <Button
+	                android:id="@+id/dialog_equipment_airCondition_bt_off"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_centerInParent="true"
+	                android:layout_margin="15dp"
+	                android:background="@drawable/selector_bt_dialog_bg"
+	                android:gravity="center"
+	                android:text="关闭"
+	                android:textSize="14dp" />
+	
+	        </RelativeLayout>
+	        
+	            
+	    </LinearLayout>
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/dialog_equipment_airCondition_btLayout"
+	        android:layout_centerHorizontal="true"
+	        android:orientation="horizontal" >
+			
+	        <RelativeLayout 
+		        android:layout_below="@+id/dialog_equipment_airCondition_iv_btLayout"
+		        android:gravity="center"
+		        android:layout_marginTop="10dp"
+		        android:layout_marginBottom="10dp"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content" >
+			    <TextView 
+			        android:id="@+id/dialog_equipment_airCondition_tv_tempIncrease"
+			        android:cacheColorHint="@android:color/transparent"
+			        android:gravity="center"
+			        android:layout_width="80dp"
+			        android:layout_height="80dp"
+			        android:layout_margin="10dp"
+			        android:background="@drawable/selector_bt_dialog_bg"
+			        android:textSize="18dp"
+			        android:text="温度 +"
+			        />
+			    <TextView 
+			        android:gravity="center"
+			        android:cacheColorHint="@android:color/transparent"
+			        android:id="@+id/dialog_equipment_airCondition_tv_summerModel"
+			        android:layout_width="80dp"
+			        android:layout_height="80dp"
+			        android:layout_margin="10dp"
+			        android:layout_toRightOf="@id/dialog_equipment_airCondition_tv_tempIncrease"
+			        android:background="@drawable/selector_bt_dialog_bg"
+			        android:textSize="18dp"
+			        android:text="夏季"/>
+			    <TextView 
+			        android:gravity="center"
+			        android:cacheColorHint="@android:color/transparent"
+			        android:id="@+id/dialog_equipment_airCondition_tv_tempDecrease"
+			        android:layout_width="80dp"
+			        android:layout_height="80dp"
+			        android:layout_margin="10dp"
+			        android:layout_below="@id/dialog_equipment_airCondition_tv_tempIncrease"
+			        android:background="@drawable/selector_bt_dialog_bg"
+			        android:textSize="18dp"
+			        android:text="温度 -"/>
+			    <TextView 
+			        android:gravity="center"
+			        android:cacheColorHint="@android:color/transparent"
+			        android:id="@+id/dialog_equipment_airCondition_tv_windModel"
+			        android:layout_width="80dp"
+			        android:layout_height="80dp"
+			        android:layout_margin="10dp"
+			        android:layout_below="@id/dialog_equipment_airCondition_tv_summerModel"
+			        android:layout_toRightOf="@id/dialog_equipment_airCondition_tv_tempDecrease"
+			      	android:background="@drawable/selector_bt_dialog_bg"
+			        android:textSize="18dp"
+			        android:text="冬季"/>
+			</RelativeLayout>
+	        
+    	</LinearLayout>
+   	</RelativeLayout>
+   	
+    <RelativeLayout 
+	    android:id="@+id/dialog_equipment_airCondition_rl_secondView"
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@color/dialogBg"
+	    android:visibility="gone"
+	    android:orientation="vertical">
+	    
+	    <RelativeLayout 
+	        android:id="@+id/dialog_equipment_airCondition_rl_title_delete"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@color/dialogTitle"
+	        >
+	
+	        <TextView
+	            android:id="@+id/dialog_equipment_airCondition_tv_title_delete"
+	            android:layout_width="wrap_content"
+	            android:layout_height="40dp"
+	            android:layout_centerInParent="true"
+	            android:gravity="center"
+	            android:text="删除设备" />
+		    
+	    </RelativeLayout>
+	
+	    <ImageView 
+	        android:id="@+id/dialog_equipment_airCondition_iv_line_delete"
+		    android:layout_width="fill_parent"
+		    android:layout_below="@+id/dialog_equipment_airCondition_rl_title_delete"
+		    android:layout_height="1dp"
+		    android:background="@color/colorLine"
+	    />
+	    
+	    <TextView
+	        android:id="@+id/dialog_equipment_airCondition_tv_message_delete"
+	        android:layout_width="fill_parent"
+	        android:layout_below="@+id/dialog_equipment_airCondition_iv_line_delete"
+	        android:layout_height="50dp"
+	        android:gravity="center"
+	        android:text="确认删除设备：？" />
+	    
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/dialog_equipment_airCondition_tv_message_delete"
+	        android:layout_centerHorizontal="true"
+	        android:orientation="horizontal" >
+			
+	        <RelativeLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="60dp"
+	            android:gravity="center"
+	            android:layout_weight="1" >
+	
+	            <Button
+	                android:id="@+id/dialog_equipment_airCondition_bt_confirm"
+	                android:background="@drawable/selector_bt_dialog_bg"
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent"
+	                android:gravity="center"
+	                android:layout_centerInParent="true"
+	                android:layout_margin="15dp"
+	                android:text="删除" />
+	        </RelativeLayout>
+	        <RelativeLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="60dp"
+	            android:gravity="center"
+	            android:layout_weight="1" >
+	
+	            <Button
+	                android:id="@+id/dialog_equipment_airCondition_bt_cancel"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:background="@drawable/selector_bt_dialog_bg"
+	                android:layout_centerInParent="true"
+	                android:gravity="center"
+	                android:layout_margin="15dp"
+	                android:text="取消" />
+	        </RelativeLayout>
+	        
+    	</LinearLayout>
+	</RelativeLayout>
+
+</RelativeLayout>

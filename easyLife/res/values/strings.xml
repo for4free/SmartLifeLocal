@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World!</string>
+    <string name="app_name">EasyLife</string>
+    <string name="TEM">温度：</string>
+    <string name="HUM">湿度：</string>
+    <string name="LIGHT">光照：</string>
+    <string name="title_activity_add_equipment">AddEquipmentActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="android_versions_title">设备控制</string>
+    <string name="android_versions_description">添加设备</string>
+    <string name="title_activity_join_family">JoinFamilyActivity</string>
+
+</resources>

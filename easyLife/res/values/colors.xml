@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorGray">#B9B9B9</color>
+    <color name="colorChildLine">#898989</color>
+    <color name="colorGrayDark">#2A2D35</color>
+    <color name="colorWhiteBlue">#AACADB</color>
+    <color name="colorBackGroudSecond">#212124</color>
+    <color name="white">#ffffff</color>
+    <color name="colorLine">#2A2D35</color>
+    <color name="lucensy">#00000001</color>
+    <color name="translucency">#e0000000</color>
+    <color name="orange">#ffa500</color>
+    <color name="blue">#0066dd</color>
+    <color name="colorTitle">#2A2D35</color>
+    <color name="colorBackGroud">#333338</color>
+    <!-- <color name="red">#bf242a</color> -->
+    <color name="transparent">#00000000</color>
+    <color name="light_orange">#fcb75c</color>
+    <color name="alpha_00">#00000000</color>
+    <color name="trans">#50000000</color>
+    <color name="red">#fe0202</color>
+    <color name="black">#000000</color>
+    <color name="background">#e5e5e5</color>
+    <color name="transparent_background">#50212124</color>
+    <color name="miWhiteGray">#333338</color>
+    <color name="miFirstDarkGray">#29292E</color>
+    <color name="miSecondDarkGray">#212124</color>
+    <color name="miFirstLine">#242429</color>
+    <color name="dialogBg">#333338</color>
+    <color name="dialogTitle">#2A2D35</color>
+    <color name="linkText">#08505F</color>
+    <color name="linkTextClicked">#032E39</color>
+    <color name="lineGray">#737373</color>
+    
+</resources>

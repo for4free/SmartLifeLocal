@@ -1,0 +1,181 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackGroud"
+    android:tag="settingFragment"
+    android:orientation="vertical"
+    tools:context="layout.SettingFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout 
+        android:id="@+id/fragment_etc_rl_family"
+        android:background="@drawable/selector_group"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+      
+        <TextView
+	        android:id="@+id/fragment_etc_tv_family"
+	        android:layout_width="wrap_content"
+	        android:layout_height="50dp"
+	        android:layout_centerVertical="true"
+	        android:gravity="center"
+	        android:textSize="16sp"
+	        android:text="我的家庭: " />
+	
+	    <TextView
+	        android:id="@+id/fragment_etc_tv_family_show"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="20dp"
+	        android:layout_toRightOf="@+id/fragment_etc_tv_family"
+	        android:layout_centerVertical="true"
+	        android:gravity="center"
+	        android:textSize="16sp"
+	        android:text="My family" />
+	    
+	</RelativeLayout>
+	
+	
+    <RelativeLayout 
+        android:id="@+id/fragment_etc_rl_famaly_member"
+        android:background="@drawable/selector_group"
+        android:layout_marginLeft="120dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+      
+        <ImageView
+            android:id="@+id/fragment_etc_iv_famaly_member"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginRight="20dp"
+	        android:layout_centerVertical="true"
+	        android:src="@drawable/family_small" />
+        
+        <TextView
+	        android:id="@+id/fragment_etc_tv_famaly_member"
+	        android:layout_toRightOf="@+id/fragment_etc_iv_famaly_member"
+	        android:layout_width="wrap_content"
+	        android:layout_height="50dp"
+	        android:layout_centerVertical="true"
+	        android:gravity="center"
+	        android:textSize="16sp"
+	        android:textColor="@drawable/selector_linktext"
+	        android:clickable="true"
+	        android:text="家庭成员" />
+        
+	</RelativeLayout>
+	
+    <ImageView 
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+	    android:background="@color/lineGray"
+    />
+    
+    <RelativeLayout 
+        android:id="@+id/fragment_etc_rl_feedback"
+        android:background="@drawable/selector_group"
+        android:layout_marginLeft="120dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <ImageView
+            android:id="@+id/fragment_etc_iv_version"
+	        android:layout_width="20dp"
+	        android:layout_height="20dp"
+	        android:layout_marginRight="20dp"
+	        android:layout_marginTop="20dp"
+	        android:layout_marginBottom="20dp"
+	        android:src="@drawable/setting_version" />
+        
+        <TextView
+	        android:id="@+id/fragment_etc_tv_version"
+	        android:layout_toRightOf="@+id/fragment_etc_iv_version"
+	        android:layout_marginTop="20dp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:textSize="16sp"
+	        android:text="版本号" />
+        
+        <TextView
+	        android:id="@+id/fragment_etc_tv_version_show"
+	        android:layout_toRightOf="@+id/fragment_etc_tv_version"
+	        android:layout_marginTop="20dp"
+	        android:layout_marginLeft="20dp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:textSize="16sp"
+	        android:text="1.0" />
+        
+        <ImageView
+            android:id="@+id/fragment_etc_iv_privacy_policy"
+            android:layout_below="@+id/fragment_etc_iv_version"
+	        android:layout_marginBottom="20dp"
+	        android:layout_width="20dp"
+	        android:layout_height="20dp"
+	        android:layout_marginRight="20dp"
+	        android:src="@drawable/ic_privacy_policy" />
+        
+        <TextView
+	        android:id="@+id/fragment_etc_tv_privacy_policy"
+	        android:layout_toRightOf="@+id/fragment_etc_iv_privacy_policy"
+	        android:layout_below="@+id/fragment_etc_iv_version"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:textSize="16sp"
+	        android:textColor="@drawable/selector_linktext"
+	        android:clickable="true"
+	        android:text="隐私政策" />
+        
+        <ImageView
+            android:id="@+id/fragment_etc_iv_terms_of_service"
+            android:layout_below="@+id/fragment_etc_iv_privacy_policy"
+	        android:layout_marginBottom="20dp"
+	        android:layout_width="20dp"
+	        android:layout_height="20dp"
+	        android:layout_marginRight="20dp"
+	        android:src="@drawable/ic_terms_of_service" />
+        
+        <TextView
+	        android:id="@+id/fragment_etc_tv_terms_of_service"
+	        android:layout_toRightOf="@+id/fragment_etc_iv_terms_of_service"
+	        android:layout_below="@+id/fragment_etc_iv_privacy_policy"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:textSize="16sp"
+	        android:textColor="@drawable/selector_linktext"
+	        android:clickable="true"
+	        android:text="服务条款" />
+      
+        <ImageView
+            android:id="@+id/fragment_etc_iv_feedback"
+            android:layout_below="@+id/fragment_etc_iv_terms_of_service"
+	        android:layout_width="20dp"
+	        android:layout_height="20dp"
+	        android:layout_marginRight="20dp"
+	        android:src="@drawable/ic_feedback" />
+        
+        <TextView
+	        android:id="@+id/fragment_etc_tv_feedback"
+	        android:layout_toRightOf="@+id/fragment_etc_iv_feedback"
+	        android:layout_below="@+id/fragment_etc_iv_terms_of_service"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:textSize="16sp"
+	        android:textColor="@drawable/selector_linktext"
+	        android:clickable="true"
+	        android:text="反馈" />
+        
+	</RelativeLayout>
+	
+    
+</LinearLayout>

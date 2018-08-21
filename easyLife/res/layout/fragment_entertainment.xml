@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackGroud"
+    android:gravity="center"
+    android:orientation="horizontal" >
+    
+    <RelativeLayout 
+        android:id="@+id/fragment_entertainment_rl_movie"
+        android:layout_height="160dp"
+        android:layout_width="160dp"
+        android:background="@drawable/selector_fragment_entertainment"
+        
+        android:gravity="center">
+        <ImageView
+              android:id="@+id/fragment_entertainment_iv_movie"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_horizontal"
+              android:src="@drawable/ic_movie_s" />
+        <TextView 
+            android:id="@+id/fragment_entertainment_tv_movie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:layout_below="@+id/fragment_entertainment_iv_movie"
+            android:text="影院"
+            />
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/fragment_entertainment_rl_ktv"
+        android:layout_height="160dp"
+        android:layout_width="160dp"
+        android:background="@drawable/selector_fragment_entertainment"
+        android:layout_margin="40dp"
+        android:gravity="center">
+        <ImageView
+              android:id="@+id/fragment_entertainment_iv_ktv"
+              android:layout_width="match_parent"
+              android:layout_height="130dp"
+              android:layout_gravity="center_horizontal"
+              android:src="@drawable/ic_ktv" />
+        
+        <TextView 
+            android:id="@+id/fragment_entertainment_tv_ktv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:layout_below="@+id/fragment_entertainment_iv_ktv"
+            android:text="ktv"
+            />
+    </RelativeLayout>
+    
+
+</LinearLayout>

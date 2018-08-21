@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_power_rl_secondView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/dialogBg"
+    android:visibility="visible"
+    android:orientation="vertical">
+    
+    <RelativeLayout 
+        android:id="@+id/dialog_power_rl_title_ctrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dialogTitle"
+        >
+
+        <TextView
+            android:id="@+id/dialog_power_tv_title_ctrl"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="电源控制" />
+	    
+    </RelativeLayout>
+
+    <ImageView 
+        android:id="@+id/dialog_power_iv_line_ctrl"
+	    android:layout_width="fill_parent"
+	    android:layout_below="@+id/dialog_power_rl_title_ctrl"
+	    android:layout_height="1dp"
+	    android:background="@color/colorLine"
+    />
+    
+    <TextView
+        android:id="@+id/dialog_power_tv_message"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/dialog_power_iv_line_ctrl"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="总电源" />
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_power_tv_message"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+		
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/dialog_power_bt_open"
+                android:background="@drawable/selector_bt_dialog_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_margin="15dp"
+                android:text="打开电源" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/dialog_power_bt_close"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/selector_bt_dialog_bg"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:layout_margin="15dp"
+                android:text="关闭电源" />
+        </RelativeLayout>
+        
+   	</LinearLayout>
+</RelativeLayout>
